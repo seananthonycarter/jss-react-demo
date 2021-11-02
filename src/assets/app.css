@@ -8,3 +8,159 @@ a[target='_blank']:after {
   are set to edit mode.
 */
 .scChromeData, .scpm { display: none !important; }
+
+html {
+  font-family: sans-serif; /* 1 */
+  -ms-text-size-adjust: 100%; /* 2 */
+  -webkit-text-size-adjust: 100%; /* 2 */
+  font-size: 100%;
+}
+
+
+/* Fonts */
+@font-face {
+	font-family: 'BHF Beats Bold';
+	src: url('./fonts/BHFBeats-Bold.eot'); /* IE9 Compat Modes */
+	src: url('./fonts/BHFBeats-Bold.eot?#iefix') format('embedded-opentype'), /* IE6-IE8 */
+		url('./fonts/BHFBeats-Bold.woff') format('woff'), /* Modern Browsers */
+		url('./fonts/BHFBeats-Bold.ttf')  format('truetype'), /* Safari, Android, iOS */
+		url('./fonts/BHFBeats-Bold.svg#ab1df6dfe246e2d2bc3cb4c769f56c0a') format('svg'); /* Legacy iOS */
+	font-style: normal;
+	font-weight:  700;
+}
+
+/* Header */
+
+.f-header {
+  display: flex;
+  align-items: center;
+  background-image: linear-gradient(to left, #ed1f54, #ff0030);
+  padding: 1.25rem;
+}
+
+.f-header__logo {
+  margin-right: 1.25rem;
+}
+
+.f-header a, h1 {
+  font-family: "BHF Beats Bold",Trebuchet,Trebuchet MS,Lucida Grande,Lucida Sans Unicode,Lucida Sans,Tahoma,sans-serif;
+  font-weight: 400;
+  font-size: 1.5rem;
+}
+
+.f-header a, 
+.f-header a:hover {
+  color: #fff;
+  text-decoration: none;
+}
+
+
+/* CTA */
+
+.cta__secondary.is-white-on-red {
+  background: #ed1f54;
+  border-radius: 23px;
+  border: none;
+  color: #fff;
+  font-family: Trebuchet,Trebuchet MS,Lucida Grande,Lucida Sans Unicode,Lucida Sans,Tahoma,sans-serif;
+  font-weight: 700;
+  font-size: 1rem;
+  height: 2.1875rem;
+  line-height: 2.1875rem;
+  margin: 0.75rem 0 0;
+  padding: 0 1.25rem;  
+}
+
+.cta__secondary.is-white-on-red:hover {
+  background-image: linear-gradient(rgba(0, 0, 0, 0.4) 0 0);
+}
+
+/* forms */ 
+
+
+.f-forms__element {
+  margin-bottom: 1.25rem;
+  color: #333;
+  line-height: 24px;
+  font-family: Trebuchet,Trebuchet MS,Lucida Grande,Lucida Sans Unicode,Lucida Sans,Tahoma,sans-serif;
+}
+
+.f-forms__element label:not(.f-forms__element-checkbox label) {
+  display: block;
+  margin-bottom: 10px;
+  font-size: 1.0625rem;
+  line-height: 24px;
+}
+
+.f-forms__element-checkbox label {
+  margin-right: 10px;;
+}
+
+.f-forms__element {
+  input[type=text],
+  input[type=email],
+  input[type=password] {
+    display: block;
+    background: #fff;
+    -webkit-border-radius: 0;
+    border-radius: 0;
+    background-clip: padding-box;
+    border: 1px solid #474e5a;
+    padding: 11px 47px 12px 17px;
+    width: 80%;
+    font-family: Trebuchet,Trebuchet MS,Lucida Grande,Lucida Sans Unicode,Lucida Sans,Tahoma,sans-serif;
+
+    &:focus {
+      border: 1px solid #ffbe32;
+    }
+
+    &.is-invalid {
+      border-color: #e61a2d;
+    }
+  }
+  
+  .toggle-password-shown {
+    position: relative;
+    width: 80%;
+
+    input {
+      padding-right: 5rem;
+      width: 100%;
+    }
+  }
+
+  &__toggle-password-link {
+    position: absolute;
+    border-bottom: 1px dotted;
+    color: rgb(140, 0, 50);
+    font-weight: bold;
+    line-height: 18px;
+    right: 15px;
+    top: 50%;
+    transform: translateY(-50%);
+  
+    &:hover {
+      color: rgb(140, 0, 50);
+      text-decoration: none;
+    }
+  }
+  
+  &--forgottenpassword,
+  &--signin {
+    text-decoration: none;
+    color: #8c0032;
+    display: inline-block;
+    margin: 1.25rem 0;
+    border-bottom: 1px dotted;
+    font-weight: 700;
+
+    &:hover {
+      color: #8c0032;
+      text-decoration: none;
+    }
+  }
+}
+
+.headline {
+  margin-bottom: 1.25rem;
+}

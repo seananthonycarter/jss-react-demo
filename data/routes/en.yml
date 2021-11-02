@@ -24,7 +24,7 @@ placeholders:
       fields:
         heading: Image
         heroImage:
-          src: /data/media/img/markus-spiske-518966-unsplash.jpg
+          src: /data/media/img/bhf-logo-mobile.png #bhf-icon2.png
           alt: Sitecore Logo
     - componentName: ContentBlock
       fields:
@@ -33,4 +33,4 @@ placeholders:
         # as long as the same indent is preserved at the beginning of each line, no escaping
         # is required at all in the value, making it easy to read
         content: |
-          <p>Goodbye</p>
+          <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Ut eu diam aliquet, volutpat mi ut, feugiat ligula. Nam volutpat augue arcu</p>
